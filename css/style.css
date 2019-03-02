@@ -107,6 +107,16 @@ animation-name: moveInRight;
       transform: translate(0);
     }
 }
+@keyframes moveInBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
 .btn:link,
 .btn:visited {
     text-transform: uppercase;
@@ -149,4 +159,8 @@ animation-name: moveInRight;
 .btn:hover::after {
     transform: scaleX(1.4) scaleY(1.6);
     opacity: 0
+}
+.btn-animated {
+    animation: moveInBottom .5s ease-out .75s;
+    animation-fill-mode: backwards;
 }
