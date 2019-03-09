@@ -4,6 +4,8 @@ Light green: #7ed5cf;
 Medium green: #7ed5cf;
 Dark green: #7ed5cf; */
 
+@import "base/base"; 
+
 $color-primary: #55c57a;
 $color-primary-light: #7ed56f;
 $color-primary-green: #7ed5cf; 
@@ -14,10 +16,15 @@ $color-black: #000;
 
 
 
-* {
+*,
+*::after,
+*::before {
     margin: 0;
     padding: 0;
     box-sizing: inherit;
+}
+html {
+    font-size: 62.5%
 }
 
 Body {

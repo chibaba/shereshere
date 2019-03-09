@@ -2,10 +2,15 @@
 Light green: #7ed5cf;
 Medium green: #7ed5cf;
 Dark green: #7ed5cf; */
-* {
+*,
+*::after,
+*::before {
   margin: 0;
   padding: 0;
   box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
 
 Body {
   font-family: "Lato", sans-seriff;
