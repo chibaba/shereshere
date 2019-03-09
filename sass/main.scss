@@ -4,10 +4,18 @@ Light green: #7ed5cf;
 Medium green: #7ed5cf;
 Dark green: #7ed5cf; */
 
+$color-primary: #55c57a;
+$color-primary-light: #7ed56f;
+$color-primary-green: #7ed5cf; 
+
+$color-grey-dark: #777;
+
+
+
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: inherit;
 }
 
 Body {
@@ -15,13 +23,13 @@ Body {
     font-weight: 400;
     font-size:16px;
     line-height:1.7;
-    color: #777;
+    color: $color-grey-dark;
     padding:30px;
 }
 
 .header {
     height: 95vh;
-    background-image: linear-gradient(to right,rgba(125, 213, 111, 0.8), rgba(40, 180,131,0.8 )),url(../img/hero.jpeg);
+    background-image: linear-gradient(to right bottom,rgba($color-primary-light, 0.8), rgba($color-primary-green, 0.8 )),url(../img/hero.jpeg);
     background-size: cover;
     background-position: top;
     position: relative;
@@ -137,21 +145,21 @@ animation-name: moveInRight;
 
     
 }
-.btn-white{
+.btn--white{
     background-color: #fff;
-    color:#777
+    color: $color-grey-dark
 }
 .btn::after{
     content: "";
     display: inline-block;
     height: 100%;
     width: 100%;
-    border-radius: 100px;
+    border-radius: 10rem;
     position: absolute;
     top:0;
     left:0;
     z-index: -1;
-    transition: all -4s;
+    transition: all .4s;
 }
 .btn-white::after{
     background-color: #fff;
